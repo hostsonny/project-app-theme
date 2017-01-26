@@ -21,10 +21,10 @@
 			while ( have_posts() ) : the_post(); ?>
             
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="posttitle">
-       <?php the_title();?>
+        <div class="post-title">
+      <a href="<?php the_permalink() ?>"><?php the_title();?></a>
             </div>
-        <div class="single-post">
+        <div class="app-single-post">
             <?php the_date(); ?>
             <?php the_content(); ?>
             </div>

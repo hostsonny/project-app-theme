@@ -31,7 +31,9 @@
             <div class="blogtitle">
             <?php bloginfo( 'name' )?>
                 </div>
+            <?php if ( is_active_sidebar( 'app-sidebar' ) ) { ?>
             <i class="fa fa-ellipsis-h icon-three" aria-hidden="true"></i>
+            <?php } ?>
             <i class="fa fa-search icon-two" aria-hidden="true"></i>
                     <div class="searchprime">
         <?php get_search_form(); ?>
